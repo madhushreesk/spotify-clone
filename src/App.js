@@ -22,6 +22,7 @@ function App() {
         type: "SET_TOKEN",
         token: _token,
       });
+
       spotify.setAccessToken(_token);
 
       spotify.getMe().then((user) => {
