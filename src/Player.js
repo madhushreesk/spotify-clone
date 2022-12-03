@@ -4,14 +4,14 @@ import Footer from "./Footer";
 import "./Player.css";
 import SideBar from "./SideBar";
 
-function Player() {
+function Player({spotify}) {
   return (
     <div className="player">
       <div className="player__body">
         <SideBar />
-        <Body />
+        <Body spotify={spotify}/>
       </div>
-      <Footer />
+      <Footer spotify={spotify}/>
     </div>
   );
 }
